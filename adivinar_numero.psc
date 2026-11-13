@@ -1,6 +1,6 @@
 Algoritmo adivina_numero
-	definir num, intentos, numcorrecto Como Entero
-	definir adivinado Como Logico
+	definir num, intentos, numcorrecto Como Entero;
+	definir adivinado Como Logico;
 	
 	adivinado <- falso;
 	numcorrecto <- 7;
@@ -9,12 +9,12 @@ Algoritmo adivina_numero
 	escribir "estoy pensando en un numero.. intenta adivinarlo";
 	leer num;
 	
-	Mientras no adivinado y num no es 0 Hacer
+	Mientras num != 0 y no adivinado Hacer
 		
-		intentos = intentos + 1;
+		intentos <- intentos + 1;
 		
 		si num = numcorrecto Entonces
-			adivinado = Verdadero;
+			adivinado <- Verdadero;
 		SiNo
 			escribir "incorrecto, prueba otra vez... o escribe 0 para finalizar";
 			leer num;
