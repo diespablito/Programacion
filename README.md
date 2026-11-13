@@ -4,7 +4,7 @@
 
   <br />
 
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=A1A1AA&center=true&vCenter=true&width=435&lines=Faltando+a+clase...;Explicando...;Cargando+clase..." alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=3000&pause=1000&color=A1A1AA&center=true&vCenter=true&width=435&lines=Faltando+a+clase...;Comentando+todo...;Cargando..." alt="Typing SVG" />
 
   <br /><br />
 
