@@ -3,36 +3,36 @@
 SubProceso tamano <- leer_datos ( lista Por Referencia )
 	definir tamano Como Entero;
 	Definir entrada Como Entero;
-	Definir i Como Entero;
+	Definir indice Como Entero;
 	
-	i<-0;
+	indice<-0;
 	
 	leer entrada;
-	mientras entrada != 0 Hacer
-		lista[i]<-entrada;
-		i<-i+1;
+	mientras entrada <> 0 Hacer
+		lista[indice]<-entrada;
+		indice<-indice+1;
 		leer entrada;
 	FinMientras
-
-	tamano<-i-1;
+	
+	tamano<-indice-1;
 	
 FinSubProceso
 
 SubProceso posicion <- buscar_numeros_posicion(lista,longitud_lista,dato)
 	Definir posicion Como Entero;
 	Definir encontrado Como Logico;
-	Definir i Como Entero;
+	Definir indice Como Entero;
 	
-	i<-0;
+	indice<-0;
 	encontrado<-Falso;
 	posicion<--1;
 	
-	Mientras i<=longitud_lista y no encontrado Hacer
-		Si dato=lista[i] Entonces
-			posicion<-i;
+	Mientras indice<=longitud_lista y no encontrado Hacer
+		Si dato=lista[indice] Entonces
+			posicion<-indice;
 			encontrado<-Verdadero;
 		FinSi
-		i<-i+1;
+		indice<-indice+1;
 	FinMientras
 	
 FinSubProceso
