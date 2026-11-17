@@ -13,7 +13,7 @@
 
   <br /><br />
 
-  <img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,java&theme=dark" />
 
   <br /><br />
   
