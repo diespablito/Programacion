@@ -1,61 +1,58 @@
 // Dada una dimension de numeros y valor determinado, me piden realizar una funcion que me devuelva la posicion donde esta ese valor determinado. (Solo la primera)
-
-SubProceso tamano <- leer_datos ( lista Por Referencia )
-	definir tamano Como Entero;
-	Definir entrada Como Entero;
-	Definir indice Como Entero;
-	
-	indice<-0;
-	
-	leer entrada;
-	mientras entrada <> 0 Hacer
-		lista[indice]<-entrada;
-		indice<-indice+1;
-		leer entrada;
-	FinMientras
-	
-	tamano<-indice-1;
-	
-FinSubProceso
+//
+//SubProceso tamano <- leer_datos ( lista Por Referencia )
+//	definir tamano Como Entero;
+//	Definir entrada Como Entero;
+//	Definir indice Como Entero;
+//	
+//	indice<-0;
+//	
+//	leer entrada;
+//	mientras entrada <> 0 Hacer
+//		lista[indice]<-entrada;
+//		indice<-indice+1;
+//		leer entrada;
+//	FinMientras
+//	
+//	tamano<-indice-1;
+//	
+//FinSubProceso
 
 SubProceso posicion <- buscar_numeros_posicion(lista,longitud_lista,dato)
 	Definir posicion Como Entero;
-	Definir encontrado Como Logico;
 	Definir indice Como Entero;
 	
 	indice<-0;
-	encontrado<-Falso;
-	posicion<--1;
 	
-	Mientras indice<=longitud_lista y no encontrado Hacer
-		Si dato=lista[indice] Entonces
-			posicion<-indice;
-			encontrado<-Verdadero;
-		FinSi
+	Mientras indice<=longitud_lista y lista[indice]<>dato Hacer
 		indice<-indice+1;
 	FinMientras
-	
+	si indice>longitud_lista Entonces
+		posicion<--1;
+	SiNo
+		posicion<-indice;
+	FinSi
 FinSubProceso
 
 Proceso buscar_posicion_de_dato
-	Dimension lista[50];
-	
-	Definir posicion Como Entero;
-	Definir lista Como Entero;
-	Definir tamano Como Entero;
-	Definir dato Como Entero;
-	
-	escribir "dame los datos de la lista y escribe 0 cuando termine";
-	tamano<-leer_datos(lista);
-	
-	escribir "que dato quieres buscar?";
-	leer dato;
-	posicion<-buscar_numeros_posicion(lista,tamano,dato);
-	
-	si posicion = -1 Entonces
-		Escribir "No se ha encontrado el numero buscado.";
-	SiNo
-		Escribir "La posicion del numero buscado es: ",posicion;
-	FinSi
-	
+//	Dimension lista[50];
+//	
+//	Definir posicion Como Entero;
+//	Definir lista Como Entero;
+//	Definir tamano Como Entero;
+//	Definir dato Como Entero;
+//	
+//	escribir "dame los datos de la lista y escribe 0 cuando termine";
+//	tamano<-leer_datos(lista);
+//	
+//	escribir "que dato quieres buscar?";
+//	leer dato;
+//	posicion<-buscar_numeros_posicion(lista,tamano,dato);
+//	
+//	si posicion = -1 Entonces
+//		Escribir "No se ha encontrado el numero buscado.";
+//	SiNo
+//		Escribir "La posicion del numero buscado es: ",posicion;
+//	FinSi
+//	
 FinProceso
