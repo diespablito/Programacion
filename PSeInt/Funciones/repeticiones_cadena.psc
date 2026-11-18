@@ -4,7 +4,7 @@ SubProceso tamano <- leer_datos ( lista Por Referencia )
 	Definir  i Como Entero;
 	i<-0;
 	leer entrada;
-	mientras entrada <> "0" Hacer
+	mientras entrada != "0" Hacer
 		lista[i]<-entrada;
 		i<-i+1;
 		leer entrada;
@@ -28,7 +28,7 @@ Proceso sin_titulo
 			i2<-i2+1;
 		SiNo
 			i3<-0;
-			mientras i3<i2 y resultado[i3]<>dato Hacer
+			mientras i3<i2 y resultado[i3]!=dato Hacer
 				i3<-i3+1;
 			FinMientras
 			si i3<i2 Entonces

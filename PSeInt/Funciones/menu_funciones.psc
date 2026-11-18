@@ -11,7 +11,7 @@ SubProceso tamano <- leer_datos ( lista Por Referencia )
 	Definir  i Como Entero;
 	i<-0;
 	leer entrada;
-	mientras entrada <> 0 Hacer
+	mientras entrada != 0 Hacer
 		lista[i]<-entrada;
 		i<-i+1;
 		leer entrada;

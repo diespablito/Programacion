@@ -6,9 +6,9 @@ Algoritmo sin_titulo
 	
 	escribir "dame el numero, escriba 0 para terminar";
 	leer num;
-	Mientras num <> 0 y no encontrado Hacer
+	Mientras num != 0 y no encontrado Hacer
 		
-		si num%2<>0 Entonces
+		si num%2!=0 Entonces
 			contador <- contador + 1;
 		FinSi
 		

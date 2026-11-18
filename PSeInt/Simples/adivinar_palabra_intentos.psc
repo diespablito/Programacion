@@ -10,7 +10,7 @@ Algoritmo trivia
 	escribir "estoy pensando en una palabra.. intenta adivinarla. Tienes 5 intentos";
 	leer palabra;
 	
-	mientras no adivinado y 1+intentos <> 5 y palabra <> "0" Hacer
+	mientras no adivinado y 1+intentos != 5 y palabra != "0" Hacer
 		
 		si Minusculas(palabra) = palabracorrecta Entonces
 			adivinado <- verdadero;

@@ -5,7 +5,7 @@ Algoritmo sin_titulo
 	numimpar <- 0;
 	
 	
-	Mientras num <> 0 Hacer
+	Mientras num != 0 Hacer
 		escribir "dame el numero, escriba 0 para terminar"
 		leer num
 		

@@ -3,7 +3,7 @@
 // dato.- La palabra que se tratar
 //longitud_resultado.- Es valor de la cantidad que contiene resultado
 SubProceso repeticiones( resultado por referencia,cantidad Por Referencia,dato,tamanoresultado Por Referencia )
-	// se elige el elemento que esté en la dimensión principal
+	// se elige el elemento que estï¿½ en la dimensiï¿½n principal
 	definir i como entero; // i.- me recorre la dimension resultado
 	
 	si tamanoresultado==0 Entonces
@@ -13,7 +13,7 @@ SubProceso repeticiones( resultado por referencia,cantidad Por Referencia,dato,t
 	SiNo
 		i<-0;
 		// Busca si la palabra esta en la dimension resultado o es nueva
-		mientras i<tamanoresultado y resultado[i]<>dato Hacer
+		mientras i<tamanoresultado y resultado[i]!=dato Hacer
 			i<-i+1;
 		FinMientras
 		// Si se cumple la palabra existe, con la cual hay repetici?n
@@ -46,7 +46,7 @@ SubProceso tamano <- entrada_datos ( lista Por Referencia )
 	escribir "Dame las palabras de la lista ";
 	leer entrada;
 	i<-0;
-	mientras entrada<>"0" Hacer
+	mientras entrada!="0" Hacer
 		lista[i]<-entrada;
 		i<-i+1;
 		escribir "Dame la siguiente palabra o 0 para terminar ";

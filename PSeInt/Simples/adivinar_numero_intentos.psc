@@ -9,7 +9,7 @@ Algoritmo adivina_numero
 	escribir "estoy pensando en un numero.. intenta adivinarlo. Tienes 5 intentos";
 	leer num;
 	
-	mientras num <> 0 y no adivinado y 1+intentos <> 5 Hacer
+	mientras num != 0 y no adivinado y 1+intentos != 5 Hacer
 		
 		si num = numcorrecto Entonces
 			adivinado <- verdadero;
